@@ -1,0 +1,176 @@
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+.custom-social-proof {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999999999999 !important;
+  font-family: 'Open Sans', sans-serif;
+}
+.custom-social-proof .custom-notification {
+  width: 400px;
+  border: 0;
+  text-align: left;
+  z-index: 99999;
+  box-sizing: border-box;
+  font-weight: 400;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px 2px rgba(11, 10, 10, 0.2);
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.custom-social-proof .custom-notification .custom-notification-container {
+  display: flex !important;
+  align-items: center;
+  height: 80px;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-image-wrapper img {
+  max-height: 75px;
+  width: 90px;
+  overflow: hidden;
+  border-radius: 6px 0 0 6px;
+  object-fit: cover;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper {
+  margin: 0;
+  height: 100%;
+  color: gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 6px 6px 0;
+  flex: 1;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content {
+  font-family: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px;
+  line-height: 16px;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content small {
+  margin-top: 3px !important;
+  display: block !important;
+  font-size: 12px !important;
+  opacity: 0.8;
+}
+.custom-social-proof .custom-notification .custom-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.custom-social-proof .custom-notification .custom-close::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.custom-social-proof .custom-notification .custom-close::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 2px;
+  background-color: gray;
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+.custom-social-proof .custom-notification:hover .custom-close {
+  opacity: 1;
+}
+.poweredby {
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 3px;
+  color: #3498db;
+}
+</style>
+
+<script type="text/javascript">   
+        var r_text = new Array ();
+r_text[0] = "Ricky Saputra";
+r_text[1] = "Jainury";
+r_text[2] = "Santoso Hendri";
+r_text[3] = "Fahmi Juni";
+r_text[5] = "Adi Manurung";
+r_text[4] = "Yahya Baidowi";
+r_text[6] = "Guntur Andra";
+r_text[7] = "Lisda Mayzura";
+r_text[8] = "Ninin Aini";
+r_text[9] = "Hendro 1121";
+
+
+    var r_map = new Array ();
+r_map[0] = "https://blogger.googleusercontent.com/img/a/AVvXsEinQVMeH1-MN58zL12oY1PYNPaR36OpqdtPbfiQphz4ErHangfp43QOGuPrfp6PIp7mH29epdCQDkbs6VlAtqfx30_gaD2bS7eaxJGqyZ3dbjrMPeOXocyUxrSKL26JJR-dFRk7QRIYbV4Wk3OZS_UpZ4QLpeKKz90wisAY4bDDBTQDYKZDqVNvRw";
+r_map[1] = "https://blogger.googleusercontent.com/img/a/AVvXsEinQVMeH1-MN58zL12oY1PYNPaR36OpqdtPbfiQphz4ErHangfp43QOGuPrfp6PIp7mH29epdCQDkbs6VlAtqfx30_gaD2bS7eaxJGqyZ3dbjrMPeOXocyUxrSKL26JJR-dFRk7QRIYbV4Wk3OZS_UpZ4QLpeKKz90wisAY4bDDBTQDYKZDqVNvRw";
+r_map[2] = "https://blogger.googleusercontent.com/img/a/AVvXsEinQVMeH1-MN58zL12oY1PYNPaR36OpqdtPbfiQphz4ErHangfp43QOGuPrfp6PIp7mH29epdCQDkbs6VlAtqfx30_gaD2bS7eaxJGqyZ3dbjrMPeOXocyUxrSKL26JJR-dFRk7QRIYbV4Wk3OZS_UpZ4QLpeKKz90wisAY4bDDBTQDYKZDqVNvRw";
+r_map[4] = "https://blogger.googleusercontent.com/img/a/AVvXsEinQVMeH1-MN58zL12oY1PYNPaR36OpqdtPbfiQphz4ErHangfp43QOGuPrfp6PIp7mH29epdCQDkbs6VlAtqfx30_gaD2bS7eaxJGqyZ3dbjrMPeOXocyUxrSKL26JJR-dFRk7QRIYbV4Wk3OZS_UpZ4QLpeKKz90wisAY4bDDBTQDYKZDqVNvRw";
+r_map[5] = "https://blogger.googleusercontent.com/img/a/AVvXsEinQVMeH1-MN58zL12oY1PYNPaR36OpqdtPbfiQphz4ErHangfp43QOGuPrfp6PIp7mH29epdCQDkbs6VlAtqfx30_gaD2bS7eaxJGqyZ3dbjrMPeOXocyUxrSKL26JJR-dFRk7QRIYbV4Wk3OZS_UpZ4QLpeKKz90wisAY4bDDBTQDYKZDqVNvRw";
+r_map[6] = "https://blogger.googleusercontent.com/img/a/AVvXsEinQVMeH1-MN58zL12oY1PYNPaR36OpqdtPbfiQphz4ErHangfp43QOGuPrfp6PIp7mH29epdCQDkbs6VlAtqfx30_gaD2bS7eaxJGqyZ3dbjrMPeOXocyUxrSKL26JJR-dFRk7QRIYbV4Wk3OZS_UpZ4QLpeKKz90wisAY4bDDBTQDYKZDqVNvRw";
+
+ 
+var r_product = new Array ();
+r_product[0] = "Properti - Blogger Template";
+r_product[1] = "Website Toko Online Pakaian & Hijab (API raja ongkir) ";
+r_product[2] = "Pasang iklan Google Ads";
+r_product[3] = "Undangan Pernikahan Digital";
+r_product[4] = "TOKO WHATSAPP BLOGSPOT";
+r_product[5] = " TOKO WHATSAPP BLOGSPOT";
+r_product[6] = "TOKO WHATSAPP BLOGSPOT";
+r_product[7] = "TOKO WHATSAPP BLOGSPOT";
+     setInterval(function(){ $(".custom-social-proof").stop().slideToggle('slow'); }, 3000);
+      $(".custom-close").click(function() {
+        $(".custom-social-proof").stop().slideToggle('slow');
+      });
+        setInterval(function(){    
+        	var myNumber = Math.floor(7*Math.random());
+        	$("#map1").attr("src",r_map[myNumber]);
+ 			$('#country').text(r_text[myNumber]);
+
+          	$('#product').text(r_product[Math.floor(7*Math.random())]);
+ 			var timeVal = Math.floor(7*Math.random());
+ 	
+ 			$('#time').text(timeVal);
+ 		
+ 		 
+     //console.log(timeVal); 
+ }, 6000);
+ </script>
+
+<section class="custom-social-proof">
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img id="map1" src="https://blogger.googleusercontent.com/img/a/AVvXsEinQVMeH1-MN58zL12oY1PYNPaR36OpqdtPbfiQphz4ErHangfp43QOGuPrfp6PIp7mH29epdCQDkbs6VlAtqfx30_gaD2bS7eaxJGqyZ3dbjrMPeOXocyUxrSKL26JJR-dFRk7QRIYbV4Wk3OZS_UpZ4QLpeKKz90wisAY4bDDBTQDYKZDqVNvRw" style="width: 50px; height: 50px" />
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Agan <span id="country">Rudy</span><br />baru saja membeli <span id="product"> TOKO WHATSAPP BLOGSPOT</span>
+            <small>
+            
+              <span id="time">1</span> hour ago &nbsp; 
+              <i class="fa fa-check-circle"></i> Completed by <a class="poweredby" href="https://tokoanayzea88.blogspot.com" target="_blank">Toko Nayzea</a>
+            </small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div>
+  </section>
+<link rel="stylesheet" href="URL menuju .css anda"/>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="url menuju .js anda"></script>
