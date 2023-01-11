@@ -1,0 +1,10 @@
+<div id="cp_widget_free"></div> <script src="https://www.cekpengiriman.com/widget/cp_widget.js"></script>
+<div id="cp_widget_free" data-tabcolor="#fdd929" data-button="#204ecf" data-buttonbg="#204ecf82" data-buttonhv="#204ecf"></div><script src="https://www.cekpengiriman.com/widget/cp_widget.js"></script>
+
+<style>
+.widgetMainCP {box-shadow:none;}
+.drK input#nomor, .drK input#origin-flexdatalist, .drK input#destination-flexdatalist, .drK input#weightDomestik, .drK select#kurir {color:#fff;}
+.drK .widgetMainCP, .drK .widgetMainCP .showFilter {background:#1e1e1e;}
+.drK .widgetMainCP .tabs-content .top {background:none;}
+.drK .widgetMainCP .tabs-content .tab-content .listSwitchType, .drK input#weightDomestik, .drK select#kurir {background:#252526;}
+</style>
