@@ -1,0 +1,55 @@
+
+<div id="responsive-container">
+<div class="testimonial">
+<div id="slideshow1">
+<img src="ALAMAT_URL_FOTO_PROFIL_1"/>
+<p>KATA_TESTIMONI_1</p>
+<div>NAMA PELANGGAN 1</div>
+<h3>JABATAN PELANGGAN 1</h3>
+</div>
+<div id="slideshow2" style="display: none">
+<img src="ALAMAT_URL_FOTO_PROFIL_2"/>
+<p>KATA_TESTIMONI_2</p>
+<div>NAMA PELANGGAN 2</div>
+<h3>JABATAN PELANGGAN 2</h3>
+</div>
+<div id="slideshow3" style="display: none">
+<img src="ALAMAT_URL_FOTO_PROFIL_3"/>
+<p>KATA_TESTIMONI_3</p>
+<div>NAMA PELANGGAN 3</div>
+<h3>JABATAN PELANGGAN 3</h3>
+</div>
+<div id="slideshow4" style="display: none">
+<img src="ALAMAT_URL_FOTO_PROFIL_4"/>
+<p>KATA_TESTIMONI_4</p>
+<div>NAMA PELANGGAN 4</div>
+<h3>JABATAN PELANGGAN 4</h3>
+</div>
+</div>
+</div>
+
+<style>
+#responsive-container{width:100%;margin:auto}.testimonial{height:500px;width:100%;padding:1em;margin:1em auto}
+.testimonial div{text-align:center;vertical-align:middle;color:#42b549;font-size:1.5em;margin-bottom:20px;}
+.testimonial h2{font-size:30px;font-weight:300;margin:25px 0 48px 0;width:100%;text-align:center}
+.testimonial img{margin:0 1em 0 1em;border-radius:50%;width:150px;height:150px}
+.testimonial p{text-align:center;vertical-align:middle;color:#555;font-size:18px}
+.testimonial h3{font-size:15px;text-align:center}
+#slideshow1, #slideshow2, #slideshow3, #slideshow4{background:transparent}
+</style>
+
+<script type="text/javaScript">
+function startSlides(start, end, delay) {
+        setTimeout(slideshow(start,start,end, delay), delay);
+    }
+    function slideshow(frame, start, end, delay) {
+        return (function() {
+        $('#slideshow' + frame).fadeOut();
+        if (frame == end) { frame = start; } else { frame += 1; }
+        setTimeout(function(){$('#slideshow' + frame ).fadeIn();}, 850);
+        setTimeout(slideshow(frame, start, end, delay), delay + 850);
+    })
+    }
+    // usage: startSlides(first frame, end frame, delay time);
+    startSlides(1, 4, 5000);
+</script>
